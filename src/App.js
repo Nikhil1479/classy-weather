@@ -1,8 +1,19 @@
 import React from "react";
 
 class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { count: 50 };
+  }
   render() {
-    return <h1>Counter</h1>;
+    return (
+      <>
+        <button> - </button>
+        <span>{this.state.count}</span>
+        <button> + </button>
+      </>
+    );
   }
 }
 
